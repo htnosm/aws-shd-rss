@@ -2,6 +2,11 @@
 
 from setuptools import setup, find_packages
 
+
+def _requires_from_file(filename):
+    return open(filename).read().splitlines()
+
+
 setup(
     name="aws-shd-rss",
     description="Check AWS Service Health Dashboard RSS",
@@ -9,8 +14,6 @@ setup(
     author="htnosm",
     author_email="htnosm@gmail.com",
     license="MIT License",
-    url="https://github.com/htnosm/aws-shd-rss",
-    packages=find_packages(),
-    # Support Python 3.8 or greater
+    install_requires=_requires_from_file('requirements.txt'),
     python_requires=">=3.8",
 )
