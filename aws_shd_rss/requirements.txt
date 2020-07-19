@@ -1,0 +1,2 @@
+dateparser==0.7.6
+feedparser==5.2.1
