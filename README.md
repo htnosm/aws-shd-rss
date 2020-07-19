@@ -24,7 +24,7 @@ from datetime import datetime, timedelta
 
 rss = AwsShdRss()
 # entries count
-len(rss.entries))
+len(rss.entries)
 
 # get all updates for range
 until_dt = datetime.now()
